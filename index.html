@@ -50,58 +50,20 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-10-08T22:21:15.000Z"><a href="/2016/10/09/test/">2016-10-09</a></time>
+        <time datetime="2016-10-09T07:33:00.000Z"><a href="/2016/10/09/git-命令-使用-积累/">2016-10-09</a></time>
       
       
   
-    <h1 class="title"><a href="/2016/10/09/test/">test</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="keyword">var</span> c = <span class="number">5</span>;</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-10-08T22:14:54.698Z"><a href="/2016/10/09/hello-world/">2016-10-09</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2016/10/09/hello-world/">Hello World</a></h1>
+    <h1 class="title"><a href="/2016/10/09/git-命令-使用-积累/">git 命令 使用 积累</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h3 id="更新gh-pages分支到本地"><a href="#更新gh-pages分支到本地" class="headerlink" title="更新gh-pages分支到本地"></a>更新gh-pages分支到本地</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> https://github.com/aopui/home.git <span class="comment">#clone</span></div><div class="line">$ git checkout gh-pages <span class="comment">#切换分支</span></div><div class="line">$ git pull</div></pre></td></tr></table></figure>
+<p>或者<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b gh-pages origin/gh-pages</div></pre></td></tr></table></figure></p>
+<h3 id="提交修改该的代码到-git"><a href="#提交修改该的代码到-git" class="headerlink" title="提交修改该的代码到 git"></a>提交修改该的代码到 git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git add .</div><div class="line">$ git add --update .</div><div class="line">$ git commit -am <span class="string">"注解"</span> <span class="comment">#注解不加 push的时候不管用</span></div><div class="line">$ git push</div></pre></td></tr></table></figure>
+<p>git commit -a//可以直接提交修改，这个还不太会用</p>
 
       
     </div>
@@ -127,14 +89,32 @@
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="search" name="q" results="0" placeholder="Buscar">
     <input type="hidden" name="q" value="site:yoursite.com">
   </form>
 </div>
 
   
+<div class="widget tag">
+  <h3 class="title">Categorías</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/git/">git</a><small>1</small></li>
+  
+  </ul>
+</div>
+
 
   
+<div class="widget tag">
+  <h3 class="title">Etiquetas</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/git/">git</a><small>1</small></li>
+  
+  </ul>
+</div>
+
 </aside>
     <div class="clearfix"></div>
   </div>
